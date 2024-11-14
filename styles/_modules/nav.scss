@@ -1,0 +1,33 @@
+@import '../_base/variables.scss';
+
+.nav {
+    margin-top: 10px;
+    width: 600px;
+    border-bottom: 1px solid black;
+    margin-bottom: 30px;
+    padding-bottom: 5px;
+
+    &__container{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        
+    }
+    &__icon{
+        
+        h2 {
+            
+            color: $primaryColor;
+            font-weight: bolder;
+            cursor: pointer;
+        }
+        span{
+            color: $secondaryColor
+        }
+    }
+    &__buttons{
+        display: flex;
+        justify-content: space-around;
+    }
+
+}

@@ -1,0 +1,57 @@
+.tasks{
+    margin-top: 20px;
+    width: 450px;
+    margin-bottom: 10px;
+    &__options{
+        color: $primaryColor;
+        font-weight: bold;
+        font-size: 20px;
+        &--title{
+            margin-bottom: 10px;
+            font-weight: lighter;
+            text-align: center;
+            &-count{
+                opacity: .8;
+                cursor: pointer;
+                margin-bottom: 5px;
+                font-weight: bold
+            }
+            &-name{
+                font-weight: bold
+            }
+            
+        }
+        &--name{
+            padding-bottom: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px $secondaryColor solid;
+            ;
+
+            button {
+                width: 38px;
+                border-radius: 3px;
+                height: 27px;
+                cursor: pointer;
+            }
+        }
+        &--add{
+            margin-top: 15px;
+            border: 2px $secondaryColor dashed;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            opacity: .7;
+            cursor:pointer;
+                &:hover{
+                    opacity: 1;
+                }
+             h2{
+                margin-left: 6px;
+             }
+        }
+    }
+}

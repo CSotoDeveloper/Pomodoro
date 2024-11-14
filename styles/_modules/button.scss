@@ -1,0 +1,31 @@
+@import '../_base/variables.scss';
+
+button{
+    background-color: $borderColor;
+    color: $primaryColor;
+    font-weight: bolder;
+    border: 1px solid white;
+    padding: 0 10px;
+    height: 30px;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.1s ease;
+        &:hover{
+            opacity: .8;
+            transform: scale(1.1);
+        }
+        svg {
+            margin-right: 5px;
+            transition: fill 0.3s ease;
+        }
+}
+
+.nav__button--shortcuts{
+    svg {
+        margin-right: 0px;
+    }
+}

@@ -1,0 +1,14 @@
+@import './_base/variables.scss';
+@import './_base/mixins.scss';
+@import './_modules/nav.scss';
+@import './_modules/button.scss';
+@import './_modules/app.scss';
+@import './_modules/task.scss';
+@import './_modules/note.scss';
+@import './_modules/work.scss';
+
+body {
+    background-color: $bgColor;
+    min-height: 100vh;
+}
+

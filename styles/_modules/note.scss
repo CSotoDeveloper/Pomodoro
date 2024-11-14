@@ -1,0 +1,126 @@
+@import '../_base/variables.scss';
+
+.note {
+    
+    width: 450px;
+        &__add{
+            background-color: white;
+            border-radius: 5px;
+            color: black;
+            h3{
+                font-weight: bold;
+            }
+            
+            &--title{
+             margin: 10px;
+
+            }
+            &--tittle-input{
+                margin: 10px;
+                width: 430px;
+                height: 50px;
+                font-size: 18px;
+                &-error{
+                    border-bottom: 1px solid red;
+                    
+                }
+            }
+
+            &--count{
+                margin: 10px;
+                display: flex;
+                
+                    &-input{
+                        background-color: rgb(239, 239, 239);
+                        width: 70px;
+                        border-radius: 5px;
+                        text-align: center;
+
+                    }
+                    &-btn{
+                        margin-left: 10px;
+                        background-color: white;
+                        border: 1px solid gray;
+                        color: black;
+                        opacity: .6;
+                        width: 50px;
+                        border-radius: 5px; 
+                        margin-right: 0px;                       
+                    }
+                  
+            }
+            &--text{
+                color: gray;
+                margin-left: 10px;
+                opacity: .6;              
+                &-open{
+                text-decoration:underline;
+                width: 85px;
+                cursor: pointer;
+                  
+                    &:hover{
+                        opacity: 1;  
+                    }                      
+                    }
+                &-notes{
+                background-color: rgb(239, 239, 239);
+                height: 80px;
+                overflow: hidden;
+                    
+                }
+                &-hidden{
+                    display: none;
+                }
+            }
+            &--options{
+                margin-top: 10px;
+                background-color: rgb(239, 239, 239);
+                display: flex;
+                
+                justify-content: flex-end;
+                padding: 10px;
+                border-radius: 5px;
+                &-cancel{
+                    background-color: rgb(239, 239, 239);
+                    opacity: 0.6;
+                    color: black;
+                    border: none;
+                }
+                &-save {
+                    background-color: gray;
+                    color: white;
+                    border: none;
+                }
+            }
+            &--total{
+                margin-top: 30px;
+                border-top: 1px solid white;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                gap: 20px;
+                height: 50px;
+                background-color: $borderColor;
+                width: 450px;
+                color: $primaryColor;
+                font-weight: bold;
+                opacity: .8;
+            }
+        }
+
+        &__disable{
+            opacity: 0;
+            display: none;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+
+
+}
+
+textarea{
+    width: 97%;
+}
+.displayoff{
+    display: none;
+}
+

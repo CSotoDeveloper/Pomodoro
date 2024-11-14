@@ -1,0 +1,75 @@
+.wrap{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    background-color: $bgColor;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.app{
+    width: 450px;
+    border: 1px solid white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    background-color: $borderColor;
+        &__options{
+            margin-top: 10px;
+            display: flex;
+            &--btns{
+                border: 0px;
+                &-active{
+                    background-color: $secondaryColor;
+                }
+
+            }
+
+        }
+        &__timer{
+            margin: 30px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            h1{
+                color: $primaryColor;
+                font-weight:bold ;
+                font-size: 100px;
+                text-align: center;
+            }
+        }
+        &__btns{
+            margin-bottom: 20px;
+            display: flex;
+            &--start {
+                background-color: $primaryColor;
+                color: $borderColor;
+                width: 200px;
+                height: 50px;
+            }
+            &--pause{
+                background-color: $primaryColor;
+                color: $borderColor;
+                width: 200px;
+                height: 50px;
+            }
+
+            &--pass{
+                height: 50px;
+                width: 50px;
+                background-color: $primaryColor;
+                color: white;
+                
+            }
+            &--disable{
+                display: none;
+            }
+
+
+        }
+}
